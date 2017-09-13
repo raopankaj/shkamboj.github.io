@@ -1,163 +1,212 @@
 body {
-font-family: 'Open Sans', sans-serif;  
+  font-family: roboto;
+  color: #E1F5FE;
 }
 
-#navbar  {
-  float:right;
-}
-/**/
-.container h1{
-  margin-top:150px;
+#contact-one {
+  width: 35%;
+  margin: 0 auto;
 }
 
-.row{
-  margin-left: auto;
-  margin-right: auto;
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  /*opacity: 0.8;*/
 }
 
-.sec-home {
-  text-align: center;
-  background: url('https://s-media-cache-ak0.pinimg.com/originals/a0/43/bc/a043bc570949f5f039c3dec5dea65d39.jpg') center center fixed;
-  background-size: cover;
-  height: 900px; /*why does it need to be bigger?*/
-  color: #fff;
-  margin:-50px;
+#about {
+  padding-top: 50px;
+  min-height: 400px;
+  background-color: #223344;
 }
 
-.sec-home h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 60px;
-  padding-top: 100px;
-  font-weight: bold;
-  text-shadow: #300 4px 4px;
+#portfolio {
+  padding-top: 50px;
+  min-height: 400px;
+  background-img: url("https://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg");
+  background-color: #223344;
 }
 
-.sec-home p {
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  padding-top: 3px;
- }
-
-.sec-about {
-  text-align: center;
-  background: url('https://intothefrayradio.com/wp-content/uploads/scary-dark-forest-desktop.jpg') center center fixed;
-  background-size: cover;
-  height: 850px;
-  color: #fff;
-  margin:-50px;
+#contact {
+  padding-top: 50px;
+  min-height: 400px;
+  background-color: #223344;
 }
 
-.sec-port {
-  text-align: center;
-  background: url('https://cdn3.artstation.com/p/assets/images/images/000/328/663/large/erel-maatita-star-wars-eps-7-fan-art.jpg?1417431756') center center fixed;
-  background-size: cover;
-  height: 1050px;
-  color: #fff;
-  margin:-50px;
+#home {
+  padding-top: 50px;
+  min-height: 400px;
+  background-color: #223344;
 }
 
-.sec-port h1{
-  font-size: 64px;
+#footer {
+  padding-top: 50px;
+  height: 650px;
+  color: #E1F5FE;
+  background-color: #223344;
 }
 
-.sec-contact {
-  text-align: center;
-  background: url('https://upload.wikimedia.org/wikipedia/en/9/9f/Shi_DeRu_and_Shi_DeYang.jpg') center center fixed;
-  background-size: cover;
-  height: 850px;
-  color: #fff;
-  margin:-50px;
+p {
+  ;
+  font-size: 18px;
 }
 
-.footer {
-  height: 90px;
-  background-color: #aaa;
-  padding-top: 20px;
- }
-
-.footer ul li{
-  font-size: 14px;
-  display: inline;
-  margin: 10px 10px 10px 10px;
+h4 {
+  font-size: 28px;
+  font-family: roboto slab;
 }
 
-.footer p{
-  font-size: 14px;
-  margin: 10px 10px 10px 50px;
+.panel {
+  border: 0px solid rgba(1, 169, 244, 0.2);
+  border-radius: 0;
+  background-color: rgba(1, 169, 244, 0.6) !important;
+  transition: box-shadow 0.3s;
 }
 
-.btn:hover {
-  background-color: #ff5;
-  color:#aaa;
-  transition: 0.5s;   
+.panel:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, .4);
 }
 
-li:hover{
-  background-color: #ddd;
+.panel-heading {
+  margin-top: -8px;
+  margin-bottom: -9px;
+  padding-top: 0px;
+  color: #E1F5FE !important;
+  background-color: transparent !important;
+  border-bottom: 0px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-#about p{
-  text-align: left;
-  padding-top:30px;
-  font-size:26px;
+.thumbnail {
+  padding: 0 0 0 0;
+  border: none;
+  border-radius: 0;
 }
 
-#about h1{
-  font-size:50px;
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -20px;
 }
+/*When screen goes smaller than x*/
 
-#about img{
-  margin:200px;
-  border-radius:50%;
-}
-
-#botoes {
-  margin-top: 100px;
+@media screen and (max-width: 600px) {
+  #portfolio-thumbnails {
+    width: 100% !important;
   }
+}
 
-#botoes a {
-  margin-top: 10px;
+@media screen and (max-width: 410px) {
+  .panel-heading {
+    display: none;
   }
-
-spam {
-  color:red;
-  font-weight: bold;
 }
 
-#port .col-md-4{
-  /*background-color:red;*/
-  border:white solid 1px;
-  height:300px;
-  padding:0px 20px 0px 20px;
+@media screen and (max-width: 767px) {
+  .right {
+    position: absolute;
+    right: 15px;
+    width: 120px;
+    border: 0px solid #73AD21;
+    padding: 0px;
+  }
 }
 
-#port .col-md-4:hover{
-  /*background-color:red;*/
-  border:gray solid 1px;
-  box-shadow:black 10px 10px 10px;
-  transition: 0.1s;
+.collapsing {
+  position: absolute;
+  right: 15px;
+  width: 120px;
+  border: 0px solid #73AD21;
+  padding: 0px;
+  overflow-x: hidden;
+  border-top: 0px;
 }
 
-.a {
-  height:80%;
-  position: relative;
-  z-index:1;
- }
+h3 {
+  font-size: 1.4em;
+  margin-top: 40px;
+  padding-top: 10px;
+}
+/* EDIT THIS*/
 
-
-img {
-  max-width:100%;
-  max-height:140%;
+.navbar {
+  border-width: 0px;
+  border-color: auto;
+  -webkit-box-shadow: 0px 0px;
+  box-shadown: 0px 0px;
+  background-color: rgba(0, 0, 0, .0);
+  background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0%, rgba(0, 0, 0, 0.0)), color-stop( 100%, rgba(0, 0, 0, 0.0)));
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+}
+.navbar-inverse .navbar-toggle{
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover{
+  border-color: transparent;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus{
+  border-color: transparent;
+  background-color: transparent;
+  border: 0px;
 }
 
-.b {
-  height:20%;
-  background-color:gray;
-  position: relative;
-  z-index:2;
-  padding: 15px;
-  font-size:20px;
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: rgba(1, 169, 244, 0.65);
 }
 
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: rgba(1, 169, 244, 0.85);
+}
+
+.navbar-inverse .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar-collapse {
+  border-top: 0px;
+  margin-right: 100px;
+}
+
+.navbar-brand,
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:focus {
+  background-color: rgba(1, 169, 244, 0.65);
+}
+
+.navbar-inverse .navbar-brand:hover {
+  background-color: rgba(1, 169, 244, 0.85);
+}
+
+hr {
+  width: 50%;
+  max-width: 425px;
+  min-width: 180px;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-width: 1px;
+  opacity: .6;
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+}
+
+.fa {
+  color: #E1F5FE;
+  opacity: 0.7;
+}
+
+.fa:hover {
+  color: #03A9F4;
+}
+
+.fa:active {
+  color: #8BC34A;
+}
