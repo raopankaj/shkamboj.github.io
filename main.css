@@ -1,220 +1,163 @@
 body {
-		padding-top: 50px;
+font-family: 'Open Sans', sans-serif;  
 }
 
-p {
-		font-size: 12px;
+#navbar  {
+  float:right;
+}
+/**/
+.container h1{
+  margin-top:150px;
 }
 
-.navbar-brand {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 24px;
+.row{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.section {
-		height: 1000px;
-		background-position: center;
+.sec-home {
+  text-align: center;
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/a0/43/bc/a043bc570949f5f039c3dec5dea65d39.jpg') center center fixed;
+  background-size: cover;
+  height: 900px; /*why does it need to be bigger?*/
+  color: #fff;
+  margin:-50px;
 }
 
-.section-title {
-		margin: 20px 0px;
-		font-size: 54px;
-		color: #111;
+.sec-home h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  padding-top: 100px;
+  font-weight: bold;
+  text-shadow: #300 4px 4px;
 }
 
-.divider {
-		margin: 10px auto 30px auto;
-		border: 0;
-		height: 1px;
-		width: 100%;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+.sec-home p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 3px;
+ }
+
+.sec-about {
+  text-align: center;
+  background: url('https://intothefrayradio.com/wp-content/uploads/scary-dark-forest-desktop.jpg') center center fixed;
+  background-size: cover;
+  height: 850px;
+  color: #fff;
+  margin:-50px;
 }
 
-.background-section {
-		background-attachment: fixed;
-		box-shadow: inset 0px 0px 10px black;
+.sec-port {
+  text-align: center;
+  background: url('https://cdn3.artstation.com/p/assets/images/images/000/328/663/large/erel-maatita-star-wars-eps-7-fan-art.jpg?1417431756') center center fixed;
+  background-size: cover;
+  height: 1050px;
+  color: #fff;
+  margin:-50px;
 }
 
-.home {
-		background-image: url("https://images.unsplash.com/reserve/GtJALYqlRDiojsfBMQRa_373A1071.jpg?q=80&fm=jpg&s=a179b4c687526f0bba5f463dcbc9cd34");
+.sec-port h1{
+  font-size: 64px;
 }
 
-.social-links {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+.sec-contact {
+  text-align: center;
+  background: url('https://upload.wikimedia.org/wikipedia/en/9/9f/Shi_DeRu_and_Shi_DeYang.jpg') center center fixed;
+  background-size: cover;
+  height: 850px;
+  color: #fff;
+  margin:-50px;
 }
 
-.social-link {
-		width: 150px;
-		margin: 0px 20px 0px 0px;
-		text-align: center;
+.footer {
+  height: 90px;
+  background-color: #aaa;
+  padding-top: 20px;
+ }
+
+.footer ul li{
+  font-size: 14px;
+  display: inline;
+  margin: 10px 10px 10px 10px;
 }
 
-.social-image {
-		float: right;
-		width: 20px;
-		heigth: 20px;
+.footer p{
+  font-size: 14px;
+  margin: 10px 10px 10px 50px;
 }
 
-@media(max-width: 600px) {
-		.social-links {
-				flex-flow: column;
-		}
-		.social-link {
-				display: block;
-				margin-top: 10px;
-		}
+.btn:hover {
+  background-color: #ff5;
+  color:#aaa;
+  transition: 0.5s;   
 }
 
-.home-logo {
-		padding: 100px;
-		font-family: 'Montserrat', sans-serif;
-		width: 500px;
-		margin: auto;
+li:hover{
+  background-color: #ddd;
 }
 
-@media(max-width: 520px) {
-		.home-logo {
-				padding: 100px 0px 100px 0px;
-				font-family: 'Montserrat', sans-serif;
-				width: 300px;
-				margin: auto;
-		}
+#about p{
+  text-align: left;
+  padding-top:30px;
+  font-size:26px;
 }
 
-.home-logo h1 {
-		font-size: 70px;
-		margin: 0;
-		padding: 0;
+#about h1{
+  font-size:50px;
 }
 
-.home-logo h2 {
-		font-size: 30px;
-		margin: 0;
-		padding: 0;
+#about img{
+  margin:200px;
+  border-radius:50%;
 }
 
-.home-logo hr {
-		margin: 10px;
-		border: 0;
-		height: 1px;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+#botoes {
+  margin-top: 100px;
+  }
+
+#botoes a {
+  margin-top: 10px;
+  }
+
+spam {
+  color:red;
+  font-weight: bold;
 }
 
-.home-lead {
-		font-size: 38px;
-		padding: 10px 70px;
+#port .col-md-4{
+  /*background-color:red;*/
+  border:white solid 1px;
+  height:300px;
+  padding:0px 20px 0px 20px;
 }
 
-.about {
-		background-image: url("https://images.unsplash.com/photo-1428263197823-ce6a8620d1e1?q=80&fm=jpg&s=cf24ca99b3eea961b1649832cdeced86");
+#port .col-md-4:hover{
+  /*background-color:red;*/
+  border:gray solid 1px;
+  box-shadow:black 10px 10px 10px;
+  transition: 0.1s;
 }
 
-.about-col {
-		padding: 0px;
-		margin-top: 100px;
-		max-width: 1000px;
-}
-
-.portfolio {
-		background-image: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?q=80&fm=jpg&s=293cce57f99e5d60745e1da9da9db675");
-}
-
-.portfolio-container {
-		padding: 100px 50px;
-		text-align: center;
-}
-
-.portfolio-row {
-		margin: 0 auto;
-}
-
-.portfolio-item {
-	overflow: hidden;
-		height: 240px;
-		padding: 10px;
-		margin: -1px;
-		background-color: rgba(140, 140, 140, 0.7);
-		transition: 100ms;
-}
-
-@media(max-width: 990px){
-	.portfolio-item {
-		height: 240px;
-	}
-}
-
-.portfolio-item:hover {
-		position: relative;
-		transform: scale(1.03);
-		box-shadow: 5px 5px 10px black;
-		background-color: rgba(180, 180, 180, 1);
-		z-index: 99;
-}
-
-.portfolio-img-wrapper {
-	width: 100%;
-	height: 150px;
-	overflow: hidden;
-	margin: auto;
-}
-
-@media(max-width: 500px){
-	.portfolio-img-wrapper {
-		height: 70px;
-	}
-}
-
-.portfolio-img {
-	width: 100%;
-	heigth: auto;
-}
+.a {
+  height:80%;
+  position: relative;
+  z-index:1;
+ }
 
 
-.item-title {
-		color: black;
-		font-size: 20px;
-		float: left;
+img {
+  max-width:100%;
+  max-height:140%;
 }
 
-.item-description {
-		color: #111;
-		clear: left;
-		text-align: left;
-		overflow: hidden;
+.b {
+  height:20%;
+  background-color:gray;
+  position: relative;
+  z-index:2;
+  padding: 15px;
+  font-size:20px;
 }
 
-.contact {
-		background-image: url(https://subtlepatterns.com/patterns/zwartevilt.png);
-		height: 90vh;
-}
-
-.contact-container {
-		color: #EEE;
-		padding: 150px 50px;
-}
-
-.contact-mail {
-		margin: 100px 0px;
-}
-
-footer {
-		height: 10vh;
-}
-/* Link list in footer */
-
-.link-list {
-		margin: 30px 80px;
-}
-
-.link-list li {
-		float: left;
-		margin-right: 10px;
-}
-
-.small-text {
-		margin: 0px 80px;
-		clear: left;
-		font-size: 12px;
-}
